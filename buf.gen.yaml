@@ -6,6 +6,6 @@ plugins:
   - plugin: buf.build/grpc/python:v1.76.0
     out: python-ws/src/proto
   - plugin: buf.build/protocolbuffers/cpp:v33.1
-    out: cpp-ws/generated
+    out: cpp-ws/src
   - plugin: buf.build/grpc/cpp:v1.76.0
-    out: cpp-ws/generated
+    out: cpp-ws/src

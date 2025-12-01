@@ -3,7 +3,7 @@ set -e
 
 # Configuration
 IMAGE_NAME="grpc-buf"
-DOCKERFILE=".devcontainer/Dockerfile"
+DOCKERFILE=".bufcontainer/Dockerfile"
 
 # Check if image exists
 if ! docker image inspect "$IMAGE_NAME" &>/dev/null; then
