@@ -16,3 +16,9 @@ RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
 # Install dev tools for dev container
 COPY ./install-dev-tools.sh /tmp/
 RUN chmod +x /tmp/install-dev-tools.sh && /tmp/install-dev-tools.sh && rm -f /tmp/install-dev-tools.sh
+
+
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip python3-venv pipx && \
+    pipx ensurepath
+RUN pipx install conan

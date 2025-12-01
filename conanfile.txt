@@ -1,0 +1,11 @@
+[requires]
+grpc/1.72.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[options]
+pkg/grpc:shared=False
+pkg/protobuf:shared=False
+pkg/abseil:shared=False
