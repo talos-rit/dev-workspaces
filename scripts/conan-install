@@ -1,8 +1,0 @@
-#!/bin/bash
-set -e
-
-TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-
-pipx ensurepath
-pipx run conan profile detect --force
-pipx run conan install . --output-folder=cpp-ws/build --build=missing  2>&1 | tee .log/conan_$TIMESTAMP.log

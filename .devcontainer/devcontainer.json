@@ -10,7 +10,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pipx ensurepath && pipx run conan profile detect --force && pipx run conan install . --output-folder=cpp-ws/build --build=missing",
+	"postCreateCommand": "cd cpp-ws && pipx run conan profile detect --force && pipx run conan install . --output-folder=build --build=missing",
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.

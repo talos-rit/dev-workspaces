@@ -19,6 +19,18 @@ RUN chmod +x /tmp/install-dev-tools.sh && /tmp/install-dev-tools.sh && rm -f /tm
 
 
 RUN apt-get update && \
-    apt-get install -y python3 python3-pip python3-venv pipx && \
-    pipx ensurepath
-RUN pipx install conan
+    apt-get install -y python3 python3-pip python3-venv pipx
+
+# RUN useradd -m vscode
+
+# Switch to vscode user for pipx installs
+USER vscode
+WORKDIR /home/vscode
+
+# Ensure pipx binary directory is in PATH for vscode user
+ENV PATH="/home/vscode/.local/bin:${PATH}"
+
+# Install pipx tools as vscode user
+RUN pipx ensurepath && \
+    pipx install conan && \
+    pipx install uv

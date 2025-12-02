@@ -8,7 +8,7 @@ class GrpcSpikeConan(ConanFile):
     """
 
     settings = "os", "arch", "compiler", "build_type"
-    requires = ["grpc/1.72.0"]
+    requires = ["grpc/1.72.0", "protobuf/5.27.0"]
     generators = "CMakeDeps", "CMakeToolchain"
 
     default_options = {

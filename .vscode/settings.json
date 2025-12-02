@@ -1,4 +1,8 @@
 {
   "cmake.sourceDirectory": "/workspaces/grpc-spike/cpp-ws",
+  "C_Cpp.loggingLevel": "Debug",
+  "C_Cpp.files.exclude": {
+    "**/icd/v1/*": true,
+  },
   "python-envs.pythonProjects": []
 }
