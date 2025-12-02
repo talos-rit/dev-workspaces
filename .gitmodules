@@ -1,0 +1,6 @@
+[submodule "commander"]
+	path = commander
+	url = git@github.com:talos-rit/commander.git
+[submodule "operator"]
+	path = operator
+	url = git@github.com:talos-rit/operator.git
