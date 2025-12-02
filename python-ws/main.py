@@ -6,13 +6,13 @@ import argparse
 from typing import Callable, Iterable
 
 import grpc
-import src.icd_pb2 as icd_pb2
-import src.icd_pb2_grpc as icd_pb2_grpc
+import src.proto.icd.v1.icd_pb2 as icd_pb2
+import src.proto.icd.v1.icd_pb2_grpc as icd_pb2_grpc
 from google.protobuf import empty_pb2
 
 
 def build_calls(
-    stub: icd_pb2_grpc.TalosOperatorStub,
+    stub: icd_pb2_grpc.TalosOperatorServiceStub,
 ) -> Iterable[tuple[str, Callable[[], object]]]:
     """Return callables that invoke every RPC once with sample data."""
 
@@ -158,7 +158,7 @@ def main() -> None:
     args = parse_args()
 
     with grpc.insecure_channel(args.target) as channel:
-        stub = icd_pb2_grpc.TalosOperatorStub(channel)
+        stub = icd_pb2_grpc.TalosOperatorServiceStub(channel)
 
         for name, caller in build_calls(stub):
             try:

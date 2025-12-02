@@ -28,3 +28,45 @@ With this repository, I want to attempt to solve all pain points of current impl
 - python-ws or client side application: This represents the python implementation of grpc using python that is going to mimic the job of the commander.
 
 While I am not going to fully mimic the job of the two applications I want to acomplish two things, fully implement the logic for sending and receiving messages from both ends, and also mimic the icd spec that we currently have for our robotic application.
+
+## Buf CLI integration
+
+- **Module file**: `proto/buf.yaml` — declares the proto module used by Buf.
+- **Workspace file**: `buf.work.yaml` — includes the `proto` directory as a module.
+- **Generate template**: `buf.gen.yaml` — a template showing example plugin outputs.
+
+Locally run to generate protobuf script for each workspace:
+```bash
+buf generate
+```
+The buf cli uses a docker environment that is separate from the devcontainer, so please run this locally and let the container generate it.
+
+## Compiling code and test scripts
+
+To work on the cpp workspace open the devcontainer and run the following scripts:
+```
+./scripts/install.sh
+./scripts/build.sh
+```
+Then to run the cpp server
+```
+./cpp-ws/build/talos
+```
+
+To test using the python workspace run
+```
+uv run python-ws/main.py
+```
+This will make all of the grpc endpoint request to the cpp server.
+
+## not using devcontainer?
+Make sure to install the conan and uv. 
+The easiest I found was using the pipx tool. 
+```
+sudo apt install pipx
+pipx ensurepath
+pipx install conan
+pipx install uv
+```
+Then run `./scripts/install.sh`
+

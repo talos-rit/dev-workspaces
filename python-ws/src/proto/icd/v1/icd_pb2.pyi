@@ -1,8 +1,7 @@
 from google.protobuf import empty_pb2 as _empty_pb2
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
-from collections.abc import Mapping as _Mapping
-from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
+from typing import ClassVar as _ClassVar, Mapping as _Mapping, Optional as _Optional, Union as _Union
 
 DESCRIPTOR: _descriptor.FileDescriptor
 
@@ -191,3 +190,81 @@ class GetCartesianPositionResponse(_message.Message):
     y_tenths_mm: int
     z_tenths_mm: int
     def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ..., x_tenths_mm: _Optional[int] = ..., y_tenths_mm: _Optional[int] = ..., z_tenths_mm: _Optional[int] = ...) -> None: ...
+
+class PolarPanDiscreteResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class HomeResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class PolarPanContinuousStartResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class PolarPanContinuousStopResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class CartesianMoveDiscreteResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class CartesianMoveContinuousStartResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class CartesianMoveContinuousStopResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SetSpeedResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SavePositionResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class DeletePositionResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class GoToPositionResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SetPolarPositionResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...
+
+class SetCartesianPositionResponse(_message.Message):
+    __slots__ = ("status",)
+    STATUS_FIELD_NUMBER: _ClassVar[int]
+    status: CommandResult
+    def __init__(self, status: _Optional[_Union[CommandResult, _Mapping]] = ...) -> None: ...

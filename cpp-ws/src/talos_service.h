@@ -1,113 +1,42 @@
 #pragma once
 
-#include <grpcpp/grpcpp.h>
-
-#include <google/protobuf/empty.pb.h>
-
-#include <iosfwd>
 #include <ostream>
-#include <string>
 
-#include "icd.grpc.pb.h"
+#include "icd/v1/icd.grpc.pb.h"
 
-namespace talos::icd::server {
+namespace talos {
+namespace icd {
+namespace server {
 
-class TalosOperatorService final : public ::talos::icd::v1::TalosOperator::Service {
+class TalosOperatorService : public ::icd::v1::TalosOperatorService::Service {
 public:
-    explicit TalosOperatorService(std::ostream& log_stream);
+    explicit TalosOperatorService(std::ostream& out);
+    ~TalosOperatorService() override;
 
-    ::grpc::Status Handshake(::grpc::ServerContext* context,
-                             const ::talos::icd::v1::HandshakeRequest* request,
-                             ::talos::icd::v1::HandshakeResponse* response) override;
-
-    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* context,
-                                    const ::talos::icd::v1::PolarPanDiscreteRequest* request,
-                                    ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status Home(::grpc::ServerContext* context,
-                        const ::talos::icd::v1::HomeRequest* request,
-                        ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* context,
-                                           const ::talos::icd::v1::PolarPanContinuousStartRequest* request,
-                                           ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* context,
-                                          const ::google::protobuf::Empty* request,
-                                          ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* context,
-                                         const ::talos::icd::v1::CartesianMoveDiscreteRequest* request,
-                                         ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* context,
-                                                const ::talos::icd::v1::CartesianMoveContinuousStartRequest* request,
-                                                ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* context,
-                                               const ::google::protobuf::Empty* request,
-                                               ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status ExecuteHardwareOperation(::grpc::ServerContext* context,
-                                            const ::talos::icd::v1::ExecuteHardwareOperationRequest* request,
-                                            ::talos::icd::v1::ExecuteHardwareOperationResponse* response) override;
-
-    ::grpc::Status GetSpeed(::grpc::ServerContext* context,
-                            const ::google::protobuf::Empty* request,
-                            ::talos::icd::v1::GetSpeedResponse* response) override;
-
-    ::grpc::Status SetSpeed(::grpc::ServerContext* context,
-                            const ::talos::icd::v1::SetSpeedRequest* request,
-                            ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status SavePosition(::grpc::ServerContext* context,
-                                const ::talos::icd::v1::SavePositionRequest* request,
-                                ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status DeletePosition(::grpc::ServerContext* context,
-                                  const ::talos::icd::v1::DeletePositionRequest* request,
-                                  ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status GoToPosition(::grpc::ServerContext* context,
-                                const ::talos::icd::v1::GoToPositionRequest* request,
-                                ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status SetPolarPosition(::grpc::ServerContext* context,
-                                    const ::talos::icd::v1::SetPolarPositionRequest* request,
-                                    ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status GetPolarPosition(::grpc::ServerContext* context,
-                                    const ::talos::icd::v1::GetPolarPositionRequest* request,
-                                    ::talos::icd::v1::GetPolarPositionResponse* response) override;
-
-    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* context,
-                                        const ::talos::icd::v1::SetCartesianPositionRequest* request,
-                                        ::talos::icd::v1::CommandResult* response) override;
-
-    ::grpc::Status GetCartesianPosition(::grpc::ServerContext* context,
-                                        const ::talos::icd::v1::GetCartesianPositionRequest* request,
-                                        ::talos::icd::v1::GetCartesianPositionResponse* response) override;
+    // RPC method overrides generated by protoc/grpc
+    ::grpc::Status Handshake(::grpc::ServerContext* context, const ::icd::v1::HandshakeRequest* request, ::icd::v1::HandshakeResponse* response) override;
+    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::icd::v1::PolarPanDiscreteResponse* response) override;
+    ::grpc::Status Home(::grpc::ServerContext* context, const ::icd::v1::HomeRequest* request, ::icd::v1::HomeResponse* response) override;
+    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::icd::v1::PolarPanContinuousStartResponse* response) override;
+    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::PolarPanContinuousStopResponse* response) override;
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::icd::v1::CartesianMoveDiscreteResponse* response) override;
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::icd::v1::CartesianMoveContinuousStartResponse* response) override;
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::CartesianMoveContinuousStopResponse* response) override;
+    ::grpc::Status ExecuteHardwareOperation(::grpc::ServerContext* context, const ::icd::v1::ExecuteHardwareOperationRequest* request, ::icd::v1::ExecuteHardwareOperationResponse* response) override;
+    ::grpc::Status GetSpeed(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::GetSpeedResponse* response) override;
+    ::grpc::Status SetSpeed(::grpc::ServerContext* context, const ::icd::v1::SetSpeedRequest* request, ::icd::v1::SetSpeedResponse* response) override;
+    ::grpc::Status SavePosition(::grpc::ServerContext* context, const ::icd::v1::SavePositionRequest* request, ::icd::v1::SavePositionResponse* response) override;
+    ::grpc::Status DeletePosition(::grpc::ServerContext* context, const ::icd::v1::DeletePositionRequest* request, ::icd::v1::DeletePositionResponse* response) override;
+    ::grpc::Status GoToPosition(::grpc::ServerContext* context, const ::icd::v1::GoToPositionRequest* request, ::icd::v1::GoToPositionResponse* response) override;
+    ::grpc::Status SetPolarPosition(::grpc::ServerContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::icd::v1::SetPolarPositionResponse* response) override;
+    ::grpc::Status GetPolarPosition(::grpc::ServerContext* context, const ::icd::v1::GetPolarPositionRequest* request, ::icd::v1::GetPolarPositionResponse* response) override;
+    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::icd::v1::SetCartesianPositionResponse* response) override;
+    ::grpc::Status GetCartesianPosition(::grpc::ServerContext* context, const ::icd::v1::GetCartesianPositionRequest* request, ::icd::v1::GetCartesianPositionResponse* response) override;
 
 private:
-    void LogRequest(const std::string& method_name) const;
-
-    template <typename Request>
-    void LogRequest(const std::string& method_name, const Request& request) const;
-
-    static void PopulateSuccess(::talos::icd::v1::CommandResult* response);
-
-    std::ostream& log_;
+    std::ostream& out_;
 };
 
-}  // namespace talos::icd::server
-
-template <typename Request>
-inline void talos::icd::server::TalosOperatorService::LogRequest(const std::string& method_name,
-                                                                 const Request& request) const {
-    const std::string summary = request.ShortDebugString();
-    if (summary.empty()) {
-        log_ << "[" << method_name << "]" << std::endl;
-    } else {
-        log_ << "[" << method_name << "] " << summary << std::endl;
-    }
-}
+} // namespace server
+} // namespace icd
+} // namespace talos

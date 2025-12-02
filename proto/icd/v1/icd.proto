@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package talos.icd.v1;
+package icd.v1;
 
 import "google/protobuf/empty.proto";
 
@@ -9,24 +9,24 @@ import "google/protobuf/empty.proto";
 // RPC method and stream, so the explicit MessageId/CommandId fields are no
 // longer required and have been omitted here.
 
-service TalosOperator {
+service TalosOperatorService {
 	rpc Handshake(HandshakeRequest) returns (HandshakeResponse);
-	rpc PolarPanDiscrete(PolarPanDiscreteRequest) returns (CommandResult);
-	rpc Home(HomeRequest) returns (CommandResult);
-	rpc PolarPanContinuousStart(PolarPanContinuousStartRequest) returns (CommandResult);
-	rpc PolarPanContinuousStop(google.protobuf.Empty) returns (CommandResult);
-	rpc CartesianMoveDiscrete(CartesianMoveDiscreteRequest) returns (CommandResult);
-	rpc CartesianMoveContinuousStart(CartesianMoveContinuousStartRequest) returns (CommandResult);
-	rpc CartesianMoveContinuousStop(google.protobuf.Empty) returns (CommandResult);
+	rpc PolarPanDiscrete(PolarPanDiscreteRequest) returns (PolarPanDiscreteResponse);
+	rpc Home(HomeRequest) returns (HomeResponse);
+	rpc PolarPanContinuousStart(PolarPanContinuousStartRequest) returns (PolarPanContinuousStartResponse);
+	rpc PolarPanContinuousStop(google.protobuf.Empty) returns (PolarPanContinuousStopResponse);
+	rpc CartesianMoveDiscrete(CartesianMoveDiscreteRequest) returns (CartesianMoveDiscreteResponse);
+	rpc CartesianMoveContinuousStart(CartesianMoveContinuousStartRequest) returns (CartesianMoveContinuousStartResponse);
+	rpc CartesianMoveContinuousStop(google.protobuf.Empty) returns (CartesianMoveContinuousStopResponse);
 	rpc ExecuteHardwareOperation(ExecuteHardwareOperationRequest) returns (ExecuteHardwareOperationResponse);
 	rpc GetSpeed(google.protobuf.Empty) returns (GetSpeedResponse);
-	rpc SetSpeed(SetSpeedRequest) returns (CommandResult);
-	rpc SavePosition(SavePositionRequest) returns (CommandResult);
-	rpc DeletePosition(DeletePositionRequest) returns (CommandResult);
-	rpc GoToPosition(GoToPositionRequest) returns (CommandResult);
-	rpc SetPolarPosition(SetPolarPositionRequest) returns (CommandResult);
+	rpc SetSpeed(SetSpeedRequest) returns (SetSpeedResponse);
+	rpc SavePosition(SavePositionRequest) returns (SavePositionResponse);
+	rpc DeletePosition(DeletePositionRequest) returns (DeletePositionResponse);
+	rpc GoToPosition(GoToPositionRequest) returns (GoToPositionResponse);
+	rpc SetPolarPosition(SetPolarPositionRequest) returns (SetPolarPositionResponse);
 	rpc GetPolarPosition(GetPolarPositionRequest) returns (GetPolarPositionResponse);
-	rpc SetCartesianPosition(SetCartesianPositionRequest) returns (CommandResult);
+	rpc SetCartesianPosition(SetCartesianPositionRequest) returns (SetCartesianPositionResponse);
 	rpc GetCartesianPosition(GetCartesianPositionRequest) returns (GetCartesianPositionResponse);
 }
 
@@ -150,3 +150,54 @@ message GetCartesianPositionResponse {
 	int32 z_tenths_mm = 4;
 }
 
+message PolarPanDiscreteResponse {
+	CommandResult status = 1;
+}
+
+message HomeResponse {
+	CommandResult status = 1;
+}
+
+message PolarPanContinuousStartResponse {
+	CommandResult status = 1;
+}
+
+message PolarPanContinuousStopResponse {
+	CommandResult status = 1;
+}
+
+message CartesianMoveDiscreteResponse {
+	CommandResult status = 1;
+}
+
+message CartesianMoveContinuousStartResponse {
+	CommandResult status = 1;
+}
+
+message CartesianMoveContinuousStopResponse {
+	CommandResult status = 1;
+}
+
+message SetSpeedResponse {
+	CommandResult status = 1;
+}
+
+message SavePositionResponse {
+	CommandResult status = 1;
+}
+
+message DeletePositionResponse {
+	CommandResult status = 1;
+}
+
+message GoToPositionResponse {
+	CommandResult status = 1;
+}
+
+message SetPolarPositionResponse {
+	CommandResult status = 1;
+}
+
+message SetCartesianPositionResponse {
+	CommandResult status = 1;
+}
