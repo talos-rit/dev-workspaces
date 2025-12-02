@@ -39,6 +39,7 @@ Locally run to generate protobuf script for each workspace:
 ```bash
 buf generate
 ```
+The buf cli uses a docker environment that is separate from the devcontainer, so please run this locally and let the container generate it.
 
 ## Compiling code and test scripts
 
@@ -57,3 +58,15 @@ To test using the python workspace run
 uv run python-ws/main.py
 ```
 This will make all of the grpc endpoint request to the cpp server.
+
+## not using devcontainer?
+Make sure to install the conan and uv. 
+The easiest I found was using the pipx tool. 
+```
+sudo apt install pipx
+pipx ensurepath
+pipx install conan
+pipx install uv
+```
+Then run `./scripts/install.sh`
+
