@@ -35,7 +35,25 @@ While I am not going to fully mimic the job of the two applications I want to ac
 - **Workspace file**: `buf.work.yaml` — includes the `proto` directory as a module.
 - **Generate template**: `buf.gen.yaml` — a template showing example plugin outputs.
 
-Inside the devcontainer run:
+Locally run to generate protobuf script for each workspace:
 ```bash
 buf generate
 ```
+
+## Compiling code and test scripts
+
+To work on the cpp workspace open the devcontainer and run the following scripts:
+```
+./scripts/install.sh
+./scripts/build.sh
+```
+Then to run the cpp server
+```
+./cpp-ws/build/talos
+```
+
+To test using the python workspace run
+```
+uv run python-ws/main.py
+```
+This will make all of the grpc endpoint request to the cpp server.
