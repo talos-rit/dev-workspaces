@@ -3,6 +3,7 @@
 import grpc
 
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
+from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb2
 from icd.v1 import icd_pb2 as icd_dot_v1_dot_icd__pb2
 
 
@@ -28,37 +29,37 @@ class TalosOperatorServiceStub(object):
         self.PolarPanDiscrete = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/PolarPanDiscrete',
                 request_serializer=icd_dot_v1_dot_icd__pb2.PolarPanDiscreteRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.PolarPanDiscreteResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.Home = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/Home',
                 request_serializer=icd_dot_v1_dot_icd__pb2.HomeRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.HomeResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.PolarPanContinuousStart = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/PolarPanContinuousStart',
                 request_serializer=icd_dot_v1_dot_icd__pb2.PolarPanContinuousStartRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.PolarPanContinuousStartResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.PolarPanContinuousStop = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/PolarPanContinuousStop',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.PolarPanContinuousStopResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.CartesianMoveDiscrete = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/CartesianMoveDiscrete',
                 request_serializer=icd_dot_v1_dot_icd__pb2.CartesianMoveDiscreteRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.CartesianMoveDiscreteResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.CartesianMoveContinuousStart = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/CartesianMoveContinuousStart',
                 request_serializer=icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStartRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStartResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.CartesianMoveContinuousStop = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/CartesianMoveContinuousStop',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStopResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.ExecuteHardwareOperation = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/ExecuteHardwareOperation',
@@ -73,27 +74,27 @@ class TalosOperatorServiceStub(object):
         self.SetSpeed = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/SetSpeed',
                 request_serializer=icd_dot_v1_dot_icd__pb2.SetSpeedRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.SetSpeedResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.SavePosition = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/SavePosition',
                 request_serializer=icd_dot_v1_dot_icd__pb2.SavePositionRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.SavePositionResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.DeletePosition = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/DeletePosition',
                 request_serializer=icd_dot_v1_dot_icd__pb2.DeletePositionRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.DeletePositionResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.GoToPosition = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/GoToPosition',
                 request_serializer=icd_dot_v1_dot_icd__pb2.GoToPositionRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.GoToPositionResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.SetPolarPosition = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/SetPolarPosition',
                 request_serializer=icd_dot_v1_dot_icd__pb2.SetPolarPositionRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.SetPolarPositionResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.GetPolarPosition = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/GetPolarPosition',
@@ -103,7 +104,7 @@ class TalosOperatorServiceStub(object):
         self.SetCartesianPosition = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/SetCartesianPosition',
                 request_serializer=icd_dot_v1_dot_icd__pb2.SetCartesianPositionRequest.SerializeToString,
-                response_deserializer=icd_dot_v1_dot_icd__pb2.SetCartesianPositionResponse.FromString,
+                response_deserializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
                 _registered_method=True)
         self.GetCartesianPosition = channel.unary_unary(
                 '/icd.v1.TalosOperatorService/GetCartesianPosition',
@@ -239,37 +240,37 @@ def add_TalosOperatorServiceServicer_to_server(servicer, server):
             'PolarPanDiscrete': grpc.unary_unary_rpc_method_handler(
                     servicer.PolarPanDiscrete,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.PolarPanDiscreteRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.PolarPanDiscreteResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'Home': grpc.unary_unary_rpc_method_handler(
                     servicer.Home,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.HomeRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.HomeResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'PolarPanContinuousStart': grpc.unary_unary_rpc_method_handler(
                     servicer.PolarPanContinuousStart,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.PolarPanContinuousStartRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.PolarPanContinuousStartResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'PolarPanContinuousStop': grpc.unary_unary_rpc_method_handler(
                     servicer.PolarPanContinuousStop,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.PolarPanContinuousStopResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'CartesianMoveDiscrete': grpc.unary_unary_rpc_method_handler(
                     servicer.CartesianMoveDiscrete,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.CartesianMoveDiscreteRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.CartesianMoveDiscreteResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'CartesianMoveContinuousStart': grpc.unary_unary_rpc_method_handler(
                     servicer.CartesianMoveContinuousStart,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStartRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStartResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'CartesianMoveContinuousStop': grpc.unary_unary_rpc_method_handler(
                     servicer.CartesianMoveContinuousStop,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStopResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'ExecuteHardwareOperation': grpc.unary_unary_rpc_method_handler(
                     servicer.ExecuteHardwareOperation,
@@ -284,27 +285,27 @@ def add_TalosOperatorServiceServicer_to_server(servicer, server):
             'SetSpeed': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeed,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.SetSpeedRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.SetSpeedResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'SavePosition': grpc.unary_unary_rpc_method_handler(
                     servicer.SavePosition,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.SavePositionRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.SavePositionResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'DeletePosition': grpc.unary_unary_rpc_method_handler(
                     servicer.DeletePosition,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.DeletePositionRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.DeletePositionResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'GoToPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToPosition,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.GoToPositionRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.GoToPositionResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'SetPolarPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.SetPolarPosition,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.SetPolarPositionRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.SetPolarPositionResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'GetPolarPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetPolarPosition,
@@ -314,7 +315,7 @@ def add_TalosOperatorServiceServicer_to_server(servicer, server):
             'SetCartesianPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.SetCartesianPosition,
                     request_deserializer=icd_dot_v1_dot_icd__pb2.SetCartesianPositionRequest.FromString,
-                    response_serializer=icd_dot_v1_dot_icd__pb2.SetCartesianPositionResponse.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_wrappers__pb2.UInt32Value.SerializeToString,
             ),
             'GetCartesianPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetCartesianPosition,
@@ -380,7 +381,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/PolarPanDiscrete',
             icd_dot_v1_dot_icd__pb2.PolarPanDiscreteRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.PolarPanDiscreteResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -407,7 +408,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/Home',
             icd_dot_v1_dot_icd__pb2.HomeRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.HomeResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -434,7 +435,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/PolarPanContinuousStart',
             icd_dot_v1_dot_icd__pb2.PolarPanContinuousStartRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.PolarPanContinuousStartResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -461,7 +462,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/PolarPanContinuousStop',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.PolarPanContinuousStopResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -488,7 +489,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/CartesianMoveDiscrete',
             icd_dot_v1_dot_icd__pb2.CartesianMoveDiscreteRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.CartesianMoveDiscreteResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -515,7 +516,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/CartesianMoveContinuousStart',
             icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStartRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStartResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -542,7 +543,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/CartesianMoveContinuousStop',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.CartesianMoveContinuousStopResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -623,7 +624,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/SetSpeed',
             icd_dot_v1_dot_icd__pb2.SetSpeedRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.SetSpeedResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -650,7 +651,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/SavePosition',
             icd_dot_v1_dot_icd__pb2.SavePositionRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.SavePositionResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -677,7 +678,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/DeletePosition',
             icd_dot_v1_dot_icd__pb2.DeletePositionRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.DeletePositionResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -704,7 +705,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/GoToPosition',
             icd_dot_v1_dot_icd__pb2.GoToPositionRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.GoToPositionResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -731,7 +732,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/SetPolarPosition',
             icd_dot_v1_dot_icd__pb2.SetPolarPositionRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.SetPolarPositionResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,
@@ -785,7 +786,7 @@ class TalosOperatorService(object):
             target,
             '/icd.v1.TalosOperatorService/SetCartesianPosition',
             icd_dot_v1_dot_icd__pb2.SetCartesianPositionRequest.SerializeToString,
-            icd_dot_v1_dot_icd__pb2.SetCartesianPositionResponse.FromString,
+            google_dot_protobuf_dot_wrappers__pb2.UInt32Value.FromString,
             options,
             channel_credentials,
             insecure,

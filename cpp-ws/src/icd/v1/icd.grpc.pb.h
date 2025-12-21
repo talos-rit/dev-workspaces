@@ -49,54 +49,54 @@ class TalosOperatorService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HandshakeResponse>> PrepareAsyncHandshake(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HandshakeResponse>>(PrepareAsyncHandshakeRaw(context, request, cq));
     }
-    virtual ::grpc::Status PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::icd::v1::PolarPanDiscreteResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanDiscreteResponse>> AsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanDiscreteResponse>>(AsyncPolarPanDiscreteRaw(context, request, cq));
+    virtual ::grpc::Status PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncPolarPanDiscreteRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanDiscreteResponse>> PrepareAsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanDiscreteResponse>>(PrepareAsyncPolarPanDiscreteRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncPolarPanDiscreteRaw(context, request, cq));
     }
-    virtual ::grpc::Status Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::icd::v1::HomeResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HomeResponse>> AsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HomeResponse>>(AsyncHomeRaw(context, request, cq));
+    virtual ::grpc::Status Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncHomeRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HomeResponse>> PrepareAsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HomeResponse>>(PrepareAsyncHomeRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncHomeRaw(context, request, cq));
     }
-    virtual ::grpc::Status PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::icd::v1::PolarPanContinuousStartResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStartResponse>> AsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStartResponse>>(AsyncPolarPanContinuousStartRaw(context, request, cq));
+    virtual ::grpc::Status PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncPolarPanContinuousStartRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStartResponse>> PrepareAsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStartResponse>>(PrepareAsyncPolarPanContinuousStartRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncPolarPanContinuousStartRaw(context, request, cq));
     }
-    virtual ::grpc::Status PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::icd::v1::PolarPanContinuousStopResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStopResponse>> AsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStopResponse>>(AsyncPolarPanContinuousStopRaw(context, request, cq));
+    virtual ::grpc::Status PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncPolarPanContinuousStopRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStopResponse>> PrepareAsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStopResponse>>(PrepareAsyncPolarPanContinuousStopRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncPolarPanContinuousStopRaw(context, request, cq));
     }
-    virtual ::grpc::Status CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::icd::v1::CartesianMoveDiscreteResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveDiscreteResponse>> AsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveDiscreteResponse>>(AsyncCartesianMoveDiscreteRaw(context, request, cq));
+    virtual ::grpc::Status CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncCartesianMoveDiscreteRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveDiscreteResponse>> PrepareAsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveDiscreteResponse>>(PrepareAsyncCartesianMoveDiscreteRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncCartesianMoveDiscreteRaw(context, request, cq));
     }
-    virtual ::grpc::Status CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::icd::v1::CartesianMoveContinuousStartResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStartResponse>> AsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStartResponse>>(AsyncCartesianMoveContinuousStartRaw(context, request, cq));
+    virtual ::grpc::Status CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncCartesianMoveContinuousStartRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStartResponse>> PrepareAsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStartResponse>>(PrepareAsyncCartesianMoveContinuousStartRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncCartesianMoveContinuousStartRaw(context, request, cq));
     }
-    virtual ::grpc::Status CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::icd::v1::CartesianMoveContinuousStopResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStopResponse>> AsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStopResponse>>(AsyncCartesianMoveContinuousStopRaw(context, request, cq));
+    virtual ::grpc::Status CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncCartesianMoveContinuousStopRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStopResponse>> PrepareAsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStopResponse>>(PrepareAsyncCartesianMoveContinuousStopRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncCartesianMoveContinuousStopRaw(context, request, cq));
     }
     virtual ::grpc::Status ExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::icd::v1::ExecuteHardwareOperationResponse* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::ExecuteHardwareOperationResponse>> AsyncExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::grpc::CompletionQueue* cq) {
@@ -112,40 +112,40 @@ class TalosOperatorService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetSpeedResponse>> PrepareAsyncGetSpeed(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetSpeedResponse>>(PrepareAsyncGetSpeedRaw(context, request, cq));
     }
-    virtual ::grpc::Status SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::icd::v1::SetSpeedResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetSpeedResponse>> AsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetSpeedResponse>>(AsyncSetSpeedRaw(context, request, cq));
+    virtual ::grpc::Status SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncSetSpeedRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetSpeedResponse>> PrepareAsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetSpeedResponse>>(PrepareAsyncSetSpeedRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncSetSpeedRaw(context, request, cq));
     }
-    virtual ::grpc::Status SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::icd::v1::SavePositionResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SavePositionResponse>> AsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SavePositionResponse>>(AsyncSavePositionRaw(context, request, cq));
+    virtual ::grpc::Status SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncSavePositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SavePositionResponse>> PrepareAsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SavePositionResponse>>(PrepareAsyncSavePositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncSavePositionRaw(context, request, cq));
     }
-    virtual ::grpc::Status DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::icd::v1::DeletePositionResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::DeletePositionResponse>> AsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::DeletePositionResponse>>(AsyncDeletePositionRaw(context, request, cq));
+    virtual ::grpc::Status DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncDeletePositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::DeletePositionResponse>> PrepareAsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::DeletePositionResponse>>(PrepareAsyncDeletePositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncDeletePositionRaw(context, request, cq));
     }
-    virtual ::grpc::Status GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::icd::v1::GoToPositionResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GoToPositionResponse>> AsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GoToPositionResponse>>(AsyncGoToPositionRaw(context, request, cq));
+    virtual ::grpc::Status GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncGoToPositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GoToPositionResponse>> PrepareAsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GoToPositionResponse>>(PrepareAsyncGoToPositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncGoToPositionRaw(context, request, cq));
     }
-    virtual ::grpc::Status SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::icd::v1::SetPolarPositionResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetPolarPositionResponse>> AsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetPolarPositionResponse>>(AsyncSetPolarPositionRaw(context, request, cq));
+    virtual ::grpc::Status SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncSetPolarPositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetPolarPositionResponse>> PrepareAsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetPolarPositionResponse>>(PrepareAsyncSetPolarPositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncSetPolarPositionRaw(context, request, cq));
     }
     virtual ::grpc::Status GetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::icd::v1::GetPolarPositionResponse* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetPolarPositionResponse>> AsyncGetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
@@ -154,12 +154,12 @@ class TalosOperatorService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetPolarPositionResponse>> PrepareAsyncGetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetPolarPositionResponse>>(PrepareAsyncGetPolarPositionRaw(context, request, cq));
     }
-    virtual ::grpc::Status SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::icd::v1::SetCartesianPositionResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetCartesianPositionResponse>> AsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetCartesianPositionResponse>>(AsyncSetCartesianPositionRaw(context, request, cq));
+    virtual ::grpc::Status SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::google::protobuf::UInt32Value* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> AsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(AsyncSetCartesianPositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetCartesianPositionResponse>> PrepareAsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetCartesianPositionResponse>>(PrepareAsyncSetCartesianPositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>> PrepareAsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>>(PrepareAsyncSetCartesianPositionRaw(context, request, cq));
     }
     virtual ::grpc::Status GetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::icd::v1::GetCartesianPositionResponse* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetCartesianPositionResponse>> AsyncGetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
@@ -173,38 +173,38 @@ class TalosOperatorService final {
       virtual ~async_interface() {}
       virtual void Handshake(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest* request, ::icd::v1::HandshakeResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Handshake(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest* request, ::icd::v1::HandshakeResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::icd::v1::PolarPanDiscreteResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::icd::v1::PolarPanDiscreteResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::icd::v1::HomeResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::icd::v1::HomeResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::icd::v1::PolarPanContinuousStartResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::icd::v1::PolarPanContinuousStartResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::PolarPanContinuousStopResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::PolarPanContinuousStopResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::icd::v1::CartesianMoveDiscreteResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::icd::v1::CartesianMoveDiscreteResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::icd::v1::CartesianMoveContinuousStartResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::icd::v1::CartesianMoveContinuousStartResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::CartesianMoveContinuousStopResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::CartesianMoveContinuousStopResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       virtual void ExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest* request, ::icd::v1::ExecuteHardwareOperationResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void ExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest* request, ::icd::v1::ExecuteHardwareOperationResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       virtual void GetSpeed(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::GetSpeedResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void GetSpeed(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::GetSpeedResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::icd::v1::SetSpeedResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::icd::v1::SetSpeedResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::icd::v1::SavePositionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::icd::v1::SavePositionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::icd::v1::DeletePositionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::icd::v1::DeletePositionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::icd::v1::GoToPositionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::icd::v1::GoToPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::icd::v1::SetPolarPositionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::icd::v1::SetPolarPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       virtual void GetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest* request, ::icd::v1::GetPolarPositionResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void GetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest* request, ::icd::v1::GetPolarPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::icd::v1::SetCartesianPositionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::icd::v1::SetCartesianPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       virtual void GetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest* request, ::icd::v1::GetCartesianPositionResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void GetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest* request, ::icd::v1::GetCartesianPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
     };
@@ -214,38 +214,38 @@ class TalosOperatorService final {
    private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HandshakeResponse>* AsyncHandshakeRaw(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HandshakeResponse>* PrepareAsyncHandshakeRaw(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanDiscreteResponse>* AsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanDiscreteResponse>* PrepareAsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HomeResponse>* AsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::HomeResponse>* PrepareAsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStartResponse>* AsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStartResponse>* PrepareAsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStopResponse>* AsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::PolarPanContinuousStopResponse>* PrepareAsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveDiscreteResponse>* AsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveDiscreteResponse>* PrepareAsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStartResponse>* AsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStartResponse>* PrepareAsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStopResponse>* AsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::CartesianMoveContinuousStopResponse>* PrepareAsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::ExecuteHardwareOperationResponse>* AsyncExecuteHardwareOperationRaw(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::ExecuteHardwareOperationResponse>* PrepareAsyncExecuteHardwareOperationRaw(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetSpeedResponse>* AsyncGetSpeedRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetSpeedResponse>* PrepareAsyncGetSpeedRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetSpeedResponse>* AsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetSpeedResponse>* PrepareAsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SavePositionResponse>* AsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SavePositionResponse>* PrepareAsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::DeletePositionResponse>* AsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::DeletePositionResponse>* PrepareAsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GoToPositionResponse>* AsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GoToPositionResponse>* PrepareAsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetPolarPositionResponse>* AsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetPolarPositionResponse>* PrepareAsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetPolarPositionResponse>* AsyncGetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetPolarPositionResponse>* PrepareAsyncGetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetCartesianPositionResponse>* AsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::SetCartesianPositionResponse>* PrepareAsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* AsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::UInt32Value>* PrepareAsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetCartesianPositionResponse>* AsyncGetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::icd::v1::GetCartesianPositionResponse>* PrepareAsyncGetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
@@ -259,54 +259,54 @@ class TalosOperatorService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::HandshakeResponse>> PrepareAsyncHandshake(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::HandshakeResponse>>(PrepareAsyncHandshakeRaw(context, request, cq));
     }
-    ::grpc::Status PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::icd::v1::PolarPanDiscreteResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanDiscreteResponse>> AsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanDiscreteResponse>>(AsyncPolarPanDiscreteRaw(context, request, cq));
+    ::grpc::Status PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncPolarPanDiscreteRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanDiscreteResponse>> PrepareAsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanDiscreteResponse>>(PrepareAsyncPolarPanDiscreteRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncPolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncPolarPanDiscreteRaw(context, request, cq));
     }
-    ::grpc::Status Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::icd::v1::HomeResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::HomeResponse>> AsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::HomeResponse>>(AsyncHomeRaw(context, request, cq));
+    ::grpc::Status Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncHomeRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::HomeResponse>> PrepareAsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::HomeResponse>>(PrepareAsyncHomeRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncHome(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncHomeRaw(context, request, cq));
     }
-    ::grpc::Status PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::icd::v1::PolarPanContinuousStartResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStartResponse>> AsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStartResponse>>(AsyncPolarPanContinuousStartRaw(context, request, cq));
+    ::grpc::Status PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncPolarPanContinuousStartRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStartResponse>> PrepareAsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStartResponse>>(PrepareAsyncPolarPanContinuousStartRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncPolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncPolarPanContinuousStartRaw(context, request, cq));
     }
-    ::grpc::Status PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::icd::v1::PolarPanContinuousStopResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStopResponse>> AsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStopResponse>>(AsyncPolarPanContinuousStopRaw(context, request, cq));
+    ::grpc::Status PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncPolarPanContinuousStopRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStopResponse>> PrepareAsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStopResponse>>(PrepareAsyncPolarPanContinuousStopRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncPolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncPolarPanContinuousStopRaw(context, request, cq));
     }
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::icd::v1::CartesianMoveDiscreteResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveDiscreteResponse>> AsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveDiscreteResponse>>(AsyncCartesianMoveDiscreteRaw(context, request, cq));
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncCartesianMoveDiscreteRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveDiscreteResponse>> PrepareAsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveDiscreteResponse>>(PrepareAsyncCartesianMoveDiscreteRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncCartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncCartesianMoveDiscreteRaw(context, request, cq));
     }
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::icd::v1::CartesianMoveContinuousStartResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStartResponse>> AsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStartResponse>>(AsyncCartesianMoveContinuousStartRaw(context, request, cq));
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncCartesianMoveContinuousStartRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStartResponse>> PrepareAsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStartResponse>>(PrepareAsyncCartesianMoveContinuousStartRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncCartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncCartesianMoveContinuousStartRaw(context, request, cq));
     }
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::icd::v1::CartesianMoveContinuousStopResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStopResponse>> AsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStopResponse>>(AsyncCartesianMoveContinuousStopRaw(context, request, cq));
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncCartesianMoveContinuousStopRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStopResponse>> PrepareAsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStopResponse>>(PrepareAsyncCartesianMoveContinuousStopRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncCartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncCartesianMoveContinuousStopRaw(context, request, cq));
     }
     ::grpc::Status ExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::icd::v1::ExecuteHardwareOperationResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::ExecuteHardwareOperationResponse>> AsyncExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::grpc::CompletionQueue* cq) {
@@ -322,40 +322,40 @@ class TalosOperatorService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GetSpeedResponse>> PrepareAsyncGetSpeed(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GetSpeedResponse>>(PrepareAsyncGetSpeedRaw(context, request, cq));
     }
-    ::grpc::Status SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::icd::v1::SetSpeedResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetSpeedResponse>> AsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetSpeedResponse>>(AsyncSetSpeedRaw(context, request, cq));
+    ::grpc::Status SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncSetSpeedRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetSpeedResponse>> PrepareAsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetSpeedResponse>>(PrepareAsyncSetSpeedRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncSetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncSetSpeedRaw(context, request, cq));
     }
-    ::grpc::Status SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::icd::v1::SavePositionResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SavePositionResponse>> AsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SavePositionResponse>>(AsyncSavePositionRaw(context, request, cq));
+    ::grpc::Status SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncSavePositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SavePositionResponse>> PrepareAsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SavePositionResponse>>(PrepareAsyncSavePositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncSavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncSavePositionRaw(context, request, cq));
     }
-    ::grpc::Status DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::icd::v1::DeletePositionResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::DeletePositionResponse>> AsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::DeletePositionResponse>>(AsyncDeletePositionRaw(context, request, cq));
+    ::grpc::Status DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncDeletePositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::DeletePositionResponse>> PrepareAsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::DeletePositionResponse>>(PrepareAsyncDeletePositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncDeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncDeletePositionRaw(context, request, cq));
     }
-    ::grpc::Status GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::icd::v1::GoToPositionResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GoToPositionResponse>> AsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GoToPositionResponse>>(AsyncGoToPositionRaw(context, request, cq));
+    ::grpc::Status GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncGoToPositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GoToPositionResponse>> PrepareAsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GoToPositionResponse>>(PrepareAsyncGoToPositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncGoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncGoToPositionRaw(context, request, cq));
     }
-    ::grpc::Status SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::icd::v1::SetPolarPositionResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetPolarPositionResponse>> AsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetPolarPositionResponse>>(AsyncSetPolarPositionRaw(context, request, cq));
+    ::grpc::Status SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncSetPolarPositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetPolarPositionResponse>> PrepareAsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetPolarPositionResponse>>(PrepareAsyncSetPolarPositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncSetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncSetPolarPositionRaw(context, request, cq));
     }
     ::grpc::Status GetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::icd::v1::GetPolarPositionResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GetPolarPositionResponse>> AsyncGetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
@@ -364,12 +364,12 @@ class TalosOperatorService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GetPolarPositionResponse>> PrepareAsyncGetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GetPolarPositionResponse>>(PrepareAsyncGetPolarPositionRaw(context, request, cq));
     }
-    ::grpc::Status SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::icd::v1::SetCartesianPositionResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetCartesianPositionResponse>> AsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetCartesianPositionResponse>>(AsyncSetCartesianPositionRaw(context, request, cq));
+    ::grpc::Status SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::google::protobuf::UInt32Value* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> AsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(AsyncSetCartesianPositionRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetCartesianPositionResponse>> PrepareAsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::SetCartesianPositionResponse>>(PrepareAsyncSetCartesianPositionRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>> PrepareAsyncSetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>>(PrepareAsyncSetCartesianPositionRaw(context, request, cq));
     }
     ::grpc::Status GetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::icd::v1::GetCartesianPositionResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::icd::v1::GetCartesianPositionResponse>> AsyncGetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) {
@@ -383,38 +383,38 @@ class TalosOperatorService final {
      public:
       void Handshake(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest* request, ::icd::v1::HandshakeResponse* response, std::function<void(::grpc::Status)>) override;
       void Handshake(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest* request, ::icd::v1::HandshakeResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::icd::v1::PolarPanDiscreteResponse* response, std::function<void(::grpc::Status)>) override;
-      void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::icd::v1::PolarPanDiscreteResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::icd::v1::HomeResponse* response, std::function<void(::grpc::Status)>) override;
-      void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::icd::v1::HomeResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::icd::v1::PolarPanContinuousStartResponse* response, std::function<void(::grpc::Status)>) override;
-      void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::icd::v1::PolarPanContinuousStartResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::PolarPanContinuousStopResponse* response, std::function<void(::grpc::Status)>) override;
-      void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::PolarPanContinuousStopResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::icd::v1::CartesianMoveDiscreteResponse* response, std::function<void(::grpc::Status)>) override;
-      void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::icd::v1::CartesianMoveDiscreteResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::icd::v1::CartesianMoveContinuousStartResponse* response, std::function<void(::grpc::Status)>) override;
-      void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::icd::v1::CartesianMoveContinuousStartResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::CartesianMoveContinuousStopResponse* response, std::function<void(::grpc::Status)>) override;
-      void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::CartesianMoveContinuousStopResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void PolarPanDiscrete(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void Home(::grpc::ClientContext* context, const ::icd::v1::HomeRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void PolarPanContinuousStart(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void PolarPanContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void CartesianMoveDiscrete(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void CartesianMoveContinuousStart(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void CartesianMoveContinuousStop(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
       void ExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest* request, ::icd::v1::ExecuteHardwareOperationResponse* response, std::function<void(::grpc::Status)>) override;
       void ExecuteHardwareOperation(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest* request, ::icd::v1::ExecuteHardwareOperationResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
       void GetSpeed(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::GetSpeedResponse* response, std::function<void(::grpc::Status)>) override;
       void GetSpeed(::grpc::ClientContext* context, const ::google::protobuf::Empty* request, ::icd::v1::GetSpeedResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::icd::v1::SetSpeedResponse* response, std::function<void(::grpc::Status)>) override;
-      void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::icd::v1::SetSpeedResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::icd::v1::SavePositionResponse* response, std::function<void(::grpc::Status)>) override;
-      void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::icd::v1::SavePositionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::icd::v1::DeletePositionResponse* response, std::function<void(::grpc::Status)>) override;
-      void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::icd::v1::DeletePositionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::icd::v1::GoToPositionResponse* response, std::function<void(::grpc::Status)>) override;
-      void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::icd::v1::GoToPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::icd::v1::SetPolarPositionResponse* response, std::function<void(::grpc::Status)>) override;
-      void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::icd::v1::SetPolarPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void SetSpeed(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void SavePosition(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void DeletePosition(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void GoToPosition(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void SetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
       void GetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest* request, ::icd::v1::GetPolarPositionResponse* response, std::function<void(::grpc::Status)>) override;
       void GetPolarPosition(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest* request, ::icd::v1::GetPolarPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::icd::v1::SetCartesianPositionResponse* response, std::function<void(::grpc::Status)>) override;
-      void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::icd::v1::SetCartesianPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::google::protobuf::UInt32Value* response, std::function<void(::grpc::Status)>) override;
+      void SetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::google::protobuf::UInt32Value* response, ::grpc::ClientUnaryReactor* reactor) override;
       void GetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest* request, ::icd::v1::GetCartesianPositionResponse* response, std::function<void(::grpc::Status)>) override;
       void GetCartesianPosition(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest* request, ::icd::v1::GetCartesianPositionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
      private:
@@ -430,38 +430,38 @@ class TalosOperatorService final {
     class async async_stub_{this};
     ::grpc::ClientAsyncResponseReader< ::icd::v1::HandshakeResponse>* AsyncHandshakeRaw(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::HandshakeResponse>* PrepareAsyncHandshakeRaw(::grpc::ClientContext* context, const ::icd::v1::HandshakeRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanDiscreteResponse>* AsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanDiscreteResponse>* PrepareAsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::HomeResponse>* AsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::HomeResponse>* PrepareAsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStartResponse>* AsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStartResponse>* PrepareAsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStopResponse>* AsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::PolarPanContinuousStopResponse>* PrepareAsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveDiscreteResponse>* AsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveDiscreteResponse>* PrepareAsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStartResponse>* AsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStartResponse>* PrepareAsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStopResponse>* AsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::CartesianMoveContinuousStopResponse>* PrepareAsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncPolarPanDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncHomeRaw(::grpc::ClientContext* context, const ::icd::v1::HomeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncPolarPanContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::PolarPanContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncPolarPanContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncCartesianMoveDiscreteRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveDiscreteRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncCartesianMoveContinuousStartRaw(::grpc::ClientContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncCartesianMoveContinuousStopRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::ExecuteHardwareOperationResponse>* AsyncExecuteHardwareOperationRaw(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::ExecuteHardwareOperationResponse>* PrepareAsyncExecuteHardwareOperationRaw(::grpc::ClientContext* context, const ::icd::v1::ExecuteHardwareOperationRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::GetSpeedResponse>* AsyncGetSpeedRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::GetSpeedResponse>* PrepareAsyncGetSpeedRaw(::grpc::ClientContext* context, const ::google::protobuf::Empty& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SetSpeedResponse>* AsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SetSpeedResponse>* PrepareAsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SavePositionResponse>* AsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SavePositionResponse>* PrepareAsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::DeletePositionResponse>* AsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::DeletePositionResponse>* PrepareAsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::GoToPositionResponse>* AsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::GoToPositionResponse>* PrepareAsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SetPolarPositionResponse>* AsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SetPolarPositionResponse>* PrepareAsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncSetSpeedRaw(::grpc::ClientContext* context, const ::icd::v1::SetSpeedRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncSavePositionRaw(::grpc::ClientContext* context, const ::icd::v1::SavePositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncDeletePositionRaw(::grpc::ClientContext* context, const ::icd::v1::DeletePositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncGoToPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GoToPositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncSetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::GetPolarPositionResponse>* AsyncGetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::GetPolarPositionResponse>* PrepareAsyncGetPolarPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetPolarPositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SetCartesianPositionResponse>* AsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::icd::v1::SetCartesianPositionResponse>* PrepareAsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* AsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::UInt32Value>* PrepareAsyncSetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::SetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::GetCartesianPositionResponse>* AsyncGetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::icd::v1::GetCartesianPositionResponse>* PrepareAsyncGetCartesianPositionRaw(::grpc::ClientContext* context, const ::icd::v1::GetCartesianPositionRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_Handshake_;
@@ -490,22 +490,22 @@ class TalosOperatorService final {
     Service();
     virtual ~Service();
     virtual ::grpc::Status Handshake(::grpc::ServerContext* context, const ::icd::v1::HandshakeRequest* request, ::icd::v1::HandshakeResponse* response);
-    virtual ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::icd::v1::PolarPanDiscreteResponse* response);
-    virtual ::grpc::Status Home(::grpc::ServerContext* context, const ::icd::v1::HomeRequest* request, ::icd::v1::HomeResponse* response);
-    virtual ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::icd::v1::PolarPanContinuousStartResponse* response);
-    virtual ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::PolarPanContinuousStopResponse* response);
-    virtual ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::icd::v1::CartesianMoveDiscreteResponse* response);
-    virtual ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::icd::v1::CartesianMoveContinuousStartResponse* response);
-    virtual ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::CartesianMoveContinuousStopResponse* response);
+    virtual ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status Home(::grpc::ServerContext* context, const ::icd::v1::HomeRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response);
     virtual ::grpc::Status ExecuteHardwareOperation(::grpc::ServerContext* context, const ::icd::v1::ExecuteHardwareOperationRequest* request, ::icd::v1::ExecuteHardwareOperationResponse* response);
     virtual ::grpc::Status GetSpeed(::grpc::ServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::GetSpeedResponse* response);
-    virtual ::grpc::Status SetSpeed(::grpc::ServerContext* context, const ::icd::v1::SetSpeedRequest* request, ::icd::v1::SetSpeedResponse* response);
-    virtual ::grpc::Status SavePosition(::grpc::ServerContext* context, const ::icd::v1::SavePositionRequest* request, ::icd::v1::SavePositionResponse* response);
-    virtual ::grpc::Status DeletePosition(::grpc::ServerContext* context, const ::icd::v1::DeletePositionRequest* request, ::icd::v1::DeletePositionResponse* response);
-    virtual ::grpc::Status GoToPosition(::grpc::ServerContext* context, const ::icd::v1::GoToPositionRequest* request, ::icd::v1::GoToPositionResponse* response);
-    virtual ::grpc::Status SetPolarPosition(::grpc::ServerContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::icd::v1::SetPolarPositionResponse* response);
+    virtual ::grpc::Status SetSpeed(::grpc::ServerContext* context, const ::icd::v1::SetSpeedRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status SavePosition(::grpc::ServerContext* context, const ::icd::v1::SavePositionRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status DeletePosition(::grpc::ServerContext* context, const ::icd::v1::DeletePositionRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status GoToPosition(::grpc::ServerContext* context, const ::icd::v1::GoToPositionRequest* request, ::google::protobuf::UInt32Value* response);
+    virtual ::grpc::Status SetPolarPosition(::grpc::ServerContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::google::protobuf::UInt32Value* response);
     virtual ::grpc::Status GetPolarPosition(::grpc::ServerContext* context, const ::icd::v1::GetPolarPositionRequest* request, ::icd::v1::GetPolarPositionResponse* response);
-    virtual ::grpc::Status SetCartesianPosition(::grpc::ServerContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::icd::v1::SetCartesianPositionResponse* response);
+    virtual ::grpc::Status SetCartesianPosition(::grpc::ServerContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::google::protobuf::UInt32Value* response);
     virtual ::grpc::Status GetCartesianPosition(::grpc::ServerContext* context, const ::icd::v1::GetCartesianPositionRequest* request, ::icd::v1::GetCartesianPositionResponse* response);
   };
   template <class BaseClass>
@@ -540,11 +540,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::icd::v1::PolarPanDiscreteResponse* /*response*/) override {
+    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestPolarPanDiscrete(::grpc::ServerContext* context, ::icd::v1::PolarPanDiscreteRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::PolarPanDiscreteResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestPolarPanDiscrete(::grpc::ServerContext* context, ::icd::v1::PolarPanDiscreteRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(1, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -560,11 +560,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::icd::v1::HomeResponse* /*response*/) override {
+    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestHome(::grpc::ServerContext* context, ::icd::v1::HomeRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::HomeResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestHome(::grpc::ServerContext* context, ::icd::v1::HomeRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(2, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -580,11 +580,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::icd::v1::PolarPanContinuousStartResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestPolarPanContinuousStart(::grpc::ServerContext* context, ::icd::v1::PolarPanContinuousStartRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::PolarPanContinuousStartResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestPolarPanContinuousStart(::grpc::ServerContext* context, ::icd::v1::PolarPanContinuousStartRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(3, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -600,11 +600,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::PolarPanContinuousStopResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestPolarPanContinuousStop(::grpc::ServerContext* context, ::google::protobuf::Empty* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::PolarPanContinuousStopResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestPolarPanContinuousStop(::grpc::ServerContext* context, ::google::protobuf::Empty* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(4, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -620,11 +620,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::icd::v1::CartesianMoveDiscreteResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestCartesianMoveDiscrete(::grpc::ServerContext* context, ::icd::v1::CartesianMoveDiscreteRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::CartesianMoveDiscreteResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestCartesianMoveDiscrete(::grpc::ServerContext* context, ::icd::v1::CartesianMoveDiscreteRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(5, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -640,11 +640,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::icd::v1::CartesianMoveContinuousStartResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestCartesianMoveContinuousStart(::grpc::ServerContext* context, ::icd::v1::CartesianMoveContinuousStartRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::CartesianMoveContinuousStartResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestCartesianMoveContinuousStart(::grpc::ServerContext* context, ::icd::v1::CartesianMoveContinuousStartRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(6, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -660,11 +660,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::CartesianMoveContinuousStopResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestCartesianMoveContinuousStop(::grpc::ServerContext* context, ::google::protobuf::Empty* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::CartesianMoveContinuousStopResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestCartesianMoveContinuousStop(::grpc::ServerContext* context, ::google::protobuf::Empty* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(7, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -720,11 +720,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::icd::v1::SetSpeedResponse* /*response*/) override {
+    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestSetSpeed(::grpc::ServerContext* context, ::icd::v1::SetSpeedRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::SetSpeedResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestSetSpeed(::grpc::ServerContext* context, ::icd::v1::SetSpeedRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(10, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -740,11 +740,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::icd::v1::SavePositionResponse* /*response*/) override {
+    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestSavePosition(::grpc::ServerContext* context, ::icd::v1::SavePositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::SavePositionResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestSavePosition(::grpc::ServerContext* context, ::icd::v1::SavePositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(11, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -760,11 +760,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::icd::v1::DeletePositionResponse* /*response*/) override {
+    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestDeletePosition(::grpc::ServerContext* context, ::icd::v1::DeletePositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::DeletePositionResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestDeletePosition(::grpc::ServerContext* context, ::icd::v1::DeletePositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(12, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -780,11 +780,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::icd::v1::GoToPositionResponse* /*response*/) override {
+    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestGoToPosition(::grpc::ServerContext* context, ::icd::v1::GoToPositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::GoToPositionResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestGoToPosition(::grpc::ServerContext* context, ::icd::v1::GoToPositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(13, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -800,11 +800,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::icd::v1::SetPolarPositionResponse* /*response*/) override {
+    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestSetPolarPosition(::grpc::ServerContext* context, ::icd::v1::SetPolarPositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::SetPolarPositionResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestSetPolarPosition(::grpc::ServerContext* context, ::icd::v1::SetPolarPositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(14, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -840,11 +840,11 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::icd::v1::SetCartesianPositionResponse* /*response*/) override {
+    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestSetCartesianPosition(::grpc::ServerContext* context, ::icd::v1::SetCartesianPositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::icd::v1::SetCartesianPositionResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestSetCartesianPosition(::grpc::ServerContext* context, ::icd::v1::SetCartesianPositionRequest* request, ::grpc::ServerAsyncResponseWriter< ::google::protobuf::UInt32Value>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(16, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -903,25 +903,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_PolarPanDiscrete() {
       ::grpc::Service::MarkMethodCallback(1,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanDiscreteRequest, ::icd::v1::PolarPanDiscreteResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanDiscreteRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::icd::v1::PolarPanDiscreteResponse* response) { return this->PolarPanDiscrete(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::PolarPanDiscreteRequest* request, ::google::protobuf::UInt32Value* response) { return this->PolarPanDiscrete(context, request, response); }));}
     void SetMessageAllocatorFor_PolarPanDiscrete(
-        ::grpc::MessageAllocator< ::icd::v1::PolarPanDiscreteRequest, ::icd::v1::PolarPanDiscreteResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::PolarPanDiscreteRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanDiscreteRequest, ::icd::v1::PolarPanDiscreteResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanDiscreteRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_PolarPanDiscrete() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::icd::v1::PolarPanDiscreteResponse* /*response*/) override {
+    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* PolarPanDiscrete(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::icd::v1::PolarPanDiscreteResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_Home : public BaseClass {
@@ -930,25 +930,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_Home() {
       ::grpc::Service::MarkMethodCallback(2,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::HomeRequest, ::icd::v1::HomeResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::HomeRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::HomeRequest* request, ::icd::v1::HomeResponse* response) { return this->Home(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::HomeRequest* request, ::google::protobuf::UInt32Value* response) { return this->Home(context, request, response); }));}
     void SetMessageAllocatorFor_Home(
-        ::grpc::MessageAllocator< ::icd::v1::HomeRequest, ::icd::v1::HomeResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::HomeRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(2);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::HomeRequest, ::icd::v1::HomeResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::HomeRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_Home() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::icd::v1::HomeResponse* /*response*/) override {
+    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* Home(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::icd::v1::HomeResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_PolarPanContinuousStart : public BaseClass {
@@ -957,25 +957,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_PolarPanContinuousStart() {
       ::grpc::Service::MarkMethodCallback(3,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanContinuousStartRequest, ::icd::v1::PolarPanContinuousStartResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanContinuousStartRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::icd::v1::PolarPanContinuousStartResponse* response) { return this->PolarPanContinuousStart(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::PolarPanContinuousStartRequest* request, ::google::protobuf::UInt32Value* response) { return this->PolarPanContinuousStart(context, request, response); }));}
     void SetMessageAllocatorFor_PolarPanContinuousStart(
-        ::grpc::MessageAllocator< ::icd::v1::PolarPanContinuousStartRequest, ::icd::v1::PolarPanContinuousStartResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::PolarPanContinuousStartRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(3);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanContinuousStartRequest, ::icd::v1::PolarPanContinuousStartResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::PolarPanContinuousStartRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_PolarPanContinuousStart() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::icd::v1::PolarPanContinuousStartResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* PolarPanContinuousStart(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::icd::v1::PolarPanContinuousStartResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_PolarPanContinuousStop : public BaseClass {
@@ -984,25 +984,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_PolarPanContinuousStop() {
       ::grpc::Service::MarkMethodCallback(4,
-          new ::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::icd::v1::PolarPanContinuousStopResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::PolarPanContinuousStopResponse* response) { return this->PolarPanContinuousStop(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response) { return this->PolarPanContinuousStop(context, request, response); }));}
     void SetMessageAllocatorFor_PolarPanContinuousStop(
-        ::grpc::MessageAllocator< ::google::protobuf::Empty, ::icd::v1::PolarPanContinuousStopResponse>* allocator) {
+        ::grpc::MessageAllocator< ::google::protobuf::Empty, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(4);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::icd::v1::PolarPanContinuousStopResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_PolarPanContinuousStop() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::PolarPanContinuousStopResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* PolarPanContinuousStop(
-      ::grpc::CallbackServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::PolarPanContinuousStopResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_CartesianMoveDiscrete : public BaseClass {
@@ -1011,25 +1011,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_CartesianMoveDiscrete() {
       ::grpc::Service::MarkMethodCallback(5,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveDiscreteRequest, ::icd::v1::CartesianMoveDiscreteResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveDiscreteRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::icd::v1::CartesianMoveDiscreteResponse* response) { return this->CartesianMoveDiscrete(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::CartesianMoveDiscreteRequest* request, ::google::protobuf::UInt32Value* response) { return this->CartesianMoveDiscrete(context, request, response); }));}
     void SetMessageAllocatorFor_CartesianMoveDiscrete(
-        ::grpc::MessageAllocator< ::icd::v1::CartesianMoveDiscreteRequest, ::icd::v1::CartesianMoveDiscreteResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::CartesianMoveDiscreteRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(5);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveDiscreteRequest, ::icd::v1::CartesianMoveDiscreteResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveDiscreteRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_CartesianMoveDiscrete() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::icd::v1::CartesianMoveDiscreteResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* CartesianMoveDiscrete(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::icd::v1::CartesianMoveDiscreteResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_CartesianMoveContinuousStart : public BaseClass {
@@ -1038,25 +1038,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_CartesianMoveContinuousStart() {
       ::grpc::Service::MarkMethodCallback(6,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveContinuousStartRequest, ::icd::v1::CartesianMoveContinuousStartResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveContinuousStartRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::icd::v1::CartesianMoveContinuousStartResponse* response) { return this->CartesianMoveContinuousStart(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::CartesianMoveContinuousStartRequest* request, ::google::protobuf::UInt32Value* response) { return this->CartesianMoveContinuousStart(context, request, response); }));}
     void SetMessageAllocatorFor_CartesianMoveContinuousStart(
-        ::grpc::MessageAllocator< ::icd::v1::CartesianMoveContinuousStartRequest, ::icd::v1::CartesianMoveContinuousStartResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::CartesianMoveContinuousStartRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(6);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveContinuousStartRequest, ::icd::v1::CartesianMoveContinuousStartResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::CartesianMoveContinuousStartRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_CartesianMoveContinuousStart() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::icd::v1::CartesianMoveContinuousStartResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* CartesianMoveContinuousStart(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::icd::v1::CartesianMoveContinuousStartResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_CartesianMoveContinuousStop : public BaseClass {
@@ -1065,25 +1065,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_CartesianMoveContinuousStop() {
       ::grpc::Service::MarkMethodCallback(7,
-          new ::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::icd::v1::CartesianMoveContinuousStopResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::google::protobuf::Empty* request, ::icd::v1::CartesianMoveContinuousStopResponse* response) { return this->CartesianMoveContinuousStop(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::google::protobuf::Empty* request, ::google::protobuf::UInt32Value* response) { return this->CartesianMoveContinuousStop(context, request, response); }));}
     void SetMessageAllocatorFor_CartesianMoveContinuousStop(
-        ::grpc::MessageAllocator< ::google::protobuf::Empty, ::icd::v1::CartesianMoveContinuousStopResponse>* allocator) {
+        ::grpc::MessageAllocator< ::google::protobuf::Empty, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(7);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::icd::v1::CartesianMoveContinuousStopResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::google::protobuf::Empty, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_CartesianMoveContinuousStop() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::CartesianMoveContinuousStopResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* CartesianMoveContinuousStop(
-      ::grpc::CallbackServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::CartesianMoveContinuousStopResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_ExecuteHardwareOperation : public BaseClass {
@@ -1146,25 +1146,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_SetSpeed() {
       ::grpc::Service::MarkMethodCallback(10,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetSpeedRequest, ::icd::v1::SetSpeedResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetSpeedRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::SetSpeedRequest* request, ::icd::v1::SetSpeedResponse* response) { return this->SetSpeed(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::SetSpeedRequest* request, ::google::protobuf::UInt32Value* response) { return this->SetSpeed(context, request, response); }));}
     void SetMessageAllocatorFor_SetSpeed(
-        ::grpc::MessageAllocator< ::icd::v1::SetSpeedRequest, ::icd::v1::SetSpeedResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::SetSpeedRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(10);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetSpeedRequest, ::icd::v1::SetSpeedResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetSpeedRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_SetSpeed() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::icd::v1::SetSpeedResponse* /*response*/) override {
+    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* SetSpeed(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::icd::v1::SetSpeedResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_SavePosition : public BaseClass {
@@ -1173,25 +1173,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_SavePosition() {
       ::grpc::Service::MarkMethodCallback(11,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SavePositionRequest, ::icd::v1::SavePositionResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SavePositionRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::SavePositionRequest* request, ::icd::v1::SavePositionResponse* response) { return this->SavePosition(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::SavePositionRequest* request, ::google::protobuf::UInt32Value* response) { return this->SavePosition(context, request, response); }));}
     void SetMessageAllocatorFor_SavePosition(
-        ::grpc::MessageAllocator< ::icd::v1::SavePositionRequest, ::icd::v1::SavePositionResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::SavePositionRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(11);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SavePositionRequest, ::icd::v1::SavePositionResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SavePositionRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_SavePosition() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::icd::v1::SavePositionResponse* /*response*/) override {
+    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* SavePosition(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::icd::v1::SavePositionResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_DeletePosition : public BaseClass {
@@ -1200,25 +1200,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_DeletePosition() {
       ::grpc::Service::MarkMethodCallback(12,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::DeletePositionRequest, ::icd::v1::DeletePositionResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::DeletePositionRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::DeletePositionRequest* request, ::icd::v1::DeletePositionResponse* response) { return this->DeletePosition(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::DeletePositionRequest* request, ::google::protobuf::UInt32Value* response) { return this->DeletePosition(context, request, response); }));}
     void SetMessageAllocatorFor_DeletePosition(
-        ::grpc::MessageAllocator< ::icd::v1::DeletePositionRequest, ::icd::v1::DeletePositionResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::DeletePositionRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(12);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::DeletePositionRequest, ::icd::v1::DeletePositionResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::DeletePositionRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_DeletePosition() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::icd::v1::DeletePositionResponse* /*response*/) override {
+    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* DeletePosition(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::icd::v1::DeletePositionResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_GoToPosition : public BaseClass {
@@ -1227,25 +1227,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_GoToPosition() {
       ::grpc::Service::MarkMethodCallback(13,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::GoToPositionRequest, ::icd::v1::GoToPositionResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::GoToPositionRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::GoToPositionRequest* request, ::icd::v1::GoToPositionResponse* response) { return this->GoToPosition(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::GoToPositionRequest* request, ::google::protobuf::UInt32Value* response) { return this->GoToPosition(context, request, response); }));}
     void SetMessageAllocatorFor_GoToPosition(
-        ::grpc::MessageAllocator< ::icd::v1::GoToPositionRequest, ::icd::v1::GoToPositionResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::GoToPositionRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(13);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::GoToPositionRequest, ::icd::v1::GoToPositionResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::GoToPositionRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_GoToPosition() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::icd::v1::GoToPositionResponse* /*response*/) override {
+    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* GoToPosition(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::icd::v1::GoToPositionResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_SetPolarPosition : public BaseClass {
@@ -1254,25 +1254,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_SetPolarPosition() {
       ::grpc::Service::MarkMethodCallback(14,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetPolarPositionRequest, ::icd::v1::SetPolarPositionResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetPolarPositionRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::icd::v1::SetPolarPositionResponse* response) { return this->SetPolarPosition(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::SetPolarPositionRequest* request, ::google::protobuf::UInt32Value* response) { return this->SetPolarPosition(context, request, response); }));}
     void SetMessageAllocatorFor_SetPolarPosition(
-        ::grpc::MessageAllocator< ::icd::v1::SetPolarPositionRequest, ::icd::v1::SetPolarPositionResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::SetPolarPositionRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(14);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetPolarPositionRequest, ::icd::v1::SetPolarPositionResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetPolarPositionRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_SetPolarPosition() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::icd::v1::SetPolarPositionResponse* /*response*/) override {
+    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* SetPolarPosition(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::icd::v1::SetPolarPositionResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_GetPolarPosition : public BaseClass {
@@ -1308,25 +1308,25 @@ class TalosOperatorService final {
    public:
     WithCallbackMethod_SetCartesianPosition() {
       ::grpc::Service::MarkMethodCallback(16,
-          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetCartesianPositionRequest, ::icd::v1::SetCartesianPositionResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetCartesianPositionRequest, ::google::protobuf::UInt32Value>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::icd::v1::SetCartesianPositionResponse* response) { return this->SetCartesianPosition(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::icd::v1::SetCartesianPositionRequest* request, ::google::protobuf::UInt32Value* response) { return this->SetCartesianPosition(context, request, response); }));}
     void SetMessageAllocatorFor_SetCartesianPosition(
-        ::grpc::MessageAllocator< ::icd::v1::SetCartesianPositionRequest, ::icd::v1::SetCartesianPositionResponse>* allocator) {
+        ::grpc::MessageAllocator< ::icd::v1::SetCartesianPositionRequest, ::google::protobuf::UInt32Value>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(16);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetCartesianPositionRequest, ::icd::v1::SetCartesianPositionResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::icd::v1::SetCartesianPositionRequest, ::google::protobuf::UInt32Value>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_SetCartesianPosition() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::icd::v1::SetCartesianPositionResponse* /*response*/) override {
+    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* SetCartesianPosition(
-      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::icd::v1::SetCartesianPositionResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_GetCartesianPosition : public BaseClass {
@@ -1386,7 +1386,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::icd::v1::PolarPanDiscreteResponse* /*response*/) override {
+    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1403,7 +1403,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::icd::v1::HomeResponse* /*response*/) override {
+    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1420,7 +1420,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::icd::v1::PolarPanContinuousStartResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1437,7 +1437,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::PolarPanContinuousStopResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1454,7 +1454,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::icd::v1::CartesianMoveDiscreteResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1471,7 +1471,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::icd::v1::CartesianMoveContinuousStartResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1488,7 +1488,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::CartesianMoveContinuousStopResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1539,7 +1539,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::icd::v1::SetSpeedResponse* /*response*/) override {
+    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1556,7 +1556,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::icd::v1::SavePositionResponse* /*response*/) override {
+    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1573,7 +1573,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::icd::v1::DeletePositionResponse* /*response*/) override {
+    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1590,7 +1590,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::icd::v1::GoToPositionResponse* /*response*/) override {
+    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1607,7 +1607,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::icd::v1::SetPolarPositionResponse* /*response*/) override {
+    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1641,7 +1641,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::icd::v1::SetCartesianPositionResponse* /*response*/) override {
+    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1695,7 +1695,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::icd::v1::PolarPanDiscreteResponse* /*response*/) override {
+    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1715,7 +1715,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::icd::v1::HomeResponse* /*response*/) override {
+    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1735,7 +1735,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::icd::v1::PolarPanContinuousStartResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1755,7 +1755,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::PolarPanContinuousStopResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1775,7 +1775,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::icd::v1::CartesianMoveDiscreteResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1795,7 +1795,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::icd::v1::CartesianMoveContinuousStartResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1815,7 +1815,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::CartesianMoveContinuousStopResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1875,7 +1875,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::icd::v1::SetSpeedResponse* /*response*/) override {
+    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1895,7 +1895,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::icd::v1::SavePositionResponse* /*response*/) override {
+    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1915,7 +1915,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::icd::v1::DeletePositionResponse* /*response*/) override {
+    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1935,7 +1935,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::icd::v1::GoToPositionResponse* /*response*/) override {
+    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1955,7 +1955,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::icd::v1::SetPolarPositionResponse* /*response*/) override {
+    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1995,7 +1995,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::icd::v1::SetCartesianPositionResponse* /*response*/) override {
+    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2060,7 +2060,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::icd::v1::PolarPanDiscreteResponse* /*response*/) override {
+    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2082,7 +2082,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::icd::v1::HomeResponse* /*response*/) override {
+    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2104,7 +2104,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::icd::v1::PolarPanContinuousStartResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2126,7 +2126,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::PolarPanContinuousStopResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2148,7 +2148,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::icd::v1::CartesianMoveDiscreteResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2170,7 +2170,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::icd::v1::CartesianMoveContinuousStartResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2192,7 +2192,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::CartesianMoveContinuousStopResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2258,7 +2258,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::icd::v1::SetSpeedResponse* /*response*/) override {
+    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2280,7 +2280,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::icd::v1::SavePositionResponse* /*response*/) override {
+    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2302,7 +2302,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::icd::v1::DeletePositionResponse* /*response*/) override {
+    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2324,7 +2324,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::icd::v1::GoToPositionResponse* /*response*/) override {
+    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2346,7 +2346,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::icd::v1::SetPolarPositionResponse* /*response*/) override {
+    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2390,7 +2390,7 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::icd::v1::SetCartesianPositionResponse* /*response*/) override {
+    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2454,10 +2454,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_PolarPanDiscrete() {
       ::grpc::Service::MarkMethodStreamed(1,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::PolarPanDiscreteRequest, ::icd::v1::PolarPanDiscreteResponse>(
+          ::icd::v1::PolarPanDiscreteRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::PolarPanDiscreteRequest, ::icd::v1::PolarPanDiscreteResponse>* streamer) {
+                     ::icd::v1::PolarPanDiscreteRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedPolarPanDiscrete(context,
                          streamer);
                   }));
@@ -2466,12 +2466,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::icd::v1::PolarPanDiscreteResponse* /*response*/) override {
+    ::grpc::Status PolarPanDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedPolarPanDiscrete(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::PolarPanDiscreteRequest,::icd::v1::PolarPanDiscreteResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedPolarPanDiscrete(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::PolarPanDiscreteRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_Home : public BaseClass {
@@ -2481,10 +2481,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_Home() {
       ::grpc::Service::MarkMethodStreamed(2,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::HomeRequest, ::icd::v1::HomeResponse>(
+          ::icd::v1::HomeRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::HomeRequest, ::icd::v1::HomeResponse>* streamer) {
+                     ::icd::v1::HomeRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedHome(context,
                          streamer);
                   }));
@@ -2493,12 +2493,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::icd::v1::HomeResponse* /*response*/) override {
+    ::grpc::Status Home(::grpc::ServerContext* /*context*/, const ::icd::v1::HomeRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedHome(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::HomeRequest,::icd::v1::HomeResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedHome(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::HomeRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_PolarPanContinuousStart : public BaseClass {
@@ -2508,10 +2508,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_PolarPanContinuousStart() {
       ::grpc::Service::MarkMethodStreamed(3,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::PolarPanContinuousStartRequest, ::icd::v1::PolarPanContinuousStartResponse>(
+          ::icd::v1::PolarPanContinuousStartRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::PolarPanContinuousStartRequest, ::icd::v1::PolarPanContinuousStartResponse>* streamer) {
+                     ::icd::v1::PolarPanContinuousStartRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedPolarPanContinuousStart(context,
                          streamer);
                   }));
@@ -2520,12 +2520,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::icd::v1::PolarPanContinuousStartResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::PolarPanContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedPolarPanContinuousStart(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::PolarPanContinuousStartRequest,::icd::v1::PolarPanContinuousStartResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedPolarPanContinuousStart(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::PolarPanContinuousStartRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_PolarPanContinuousStop : public BaseClass {
@@ -2535,10 +2535,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_PolarPanContinuousStop() {
       ::grpc::Service::MarkMethodStreamed(4,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::google::protobuf::Empty, ::icd::v1::PolarPanContinuousStopResponse>(
+          ::google::protobuf::Empty, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::google::protobuf::Empty, ::icd::v1::PolarPanContinuousStopResponse>* streamer) {
+                     ::google::protobuf::Empty, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedPolarPanContinuousStop(context,
                          streamer);
                   }));
@@ -2547,12 +2547,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::PolarPanContinuousStopResponse* /*response*/) override {
+    ::grpc::Status PolarPanContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedPolarPanContinuousStop(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::protobuf::Empty,::icd::v1::PolarPanContinuousStopResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedPolarPanContinuousStop(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::protobuf::Empty,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_CartesianMoveDiscrete : public BaseClass {
@@ -2562,10 +2562,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_CartesianMoveDiscrete() {
       ::grpc::Service::MarkMethodStreamed(5,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::CartesianMoveDiscreteRequest, ::icd::v1::CartesianMoveDiscreteResponse>(
+          ::icd::v1::CartesianMoveDiscreteRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::CartesianMoveDiscreteRequest, ::icd::v1::CartesianMoveDiscreteResponse>* streamer) {
+                     ::icd::v1::CartesianMoveDiscreteRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedCartesianMoveDiscrete(context,
                          streamer);
                   }));
@@ -2574,12 +2574,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::icd::v1::CartesianMoveDiscreteResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveDiscrete(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveDiscreteRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedCartesianMoveDiscrete(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::CartesianMoveDiscreteRequest,::icd::v1::CartesianMoveDiscreteResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedCartesianMoveDiscrete(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::CartesianMoveDiscreteRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_CartesianMoveContinuousStart : public BaseClass {
@@ -2589,10 +2589,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_CartesianMoveContinuousStart() {
       ::grpc::Service::MarkMethodStreamed(6,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::CartesianMoveContinuousStartRequest, ::icd::v1::CartesianMoveContinuousStartResponse>(
+          ::icd::v1::CartesianMoveContinuousStartRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::CartesianMoveContinuousStartRequest, ::icd::v1::CartesianMoveContinuousStartResponse>* streamer) {
+                     ::icd::v1::CartesianMoveContinuousStartRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedCartesianMoveContinuousStart(context,
                          streamer);
                   }));
@@ -2601,12 +2601,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::icd::v1::CartesianMoveContinuousStartResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStart(::grpc::ServerContext* /*context*/, const ::icd::v1::CartesianMoveContinuousStartRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedCartesianMoveContinuousStart(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::CartesianMoveContinuousStartRequest,::icd::v1::CartesianMoveContinuousStartResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedCartesianMoveContinuousStart(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::CartesianMoveContinuousStartRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_CartesianMoveContinuousStop : public BaseClass {
@@ -2616,10 +2616,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_CartesianMoveContinuousStop() {
       ::grpc::Service::MarkMethodStreamed(7,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::google::protobuf::Empty, ::icd::v1::CartesianMoveContinuousStopResponse>(
+          ::google::protobuf::Empty, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::google::protobuf::Empty, ::icd::v1::CartesianMoveContinuousStopResponse>* streamer) {
+                     ::google::protobuf::Empty, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedCartesianMoveContinuousStop(context,
                          streamer);
                   }));
@@ -2628,12 +2628,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::icd::v1::CartesianMoveContinuousStopResponse* /*response*/) override {
+    ::grpc::Status CartesianMoveContinuousStop(::grpc::ServerContext* /*context*/, const ::google::protobuf::Empty* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedCartesianMoveContinuousStop(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::protobuf::Empty,::icd::v1::CartesianMoveContinuousStopResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedCartesianMoveContinuousStop(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::protobuf::Empty,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_ExecuteHardwareOperation : public BaseClass {
@@ -2697,10 +2697,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_SetSpeed() {
       ::grpc::Service::MarkMethodStreamed(10,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::SetSpeedRequest, ::icd::v1::SetSpeedResponse>(
+          ::icd::v1::SetSpeedRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::SetSpeedRequest, ::icd::v1::SetSpeedResponse>* streamer) {
+                     ::icd::v1::SetSpeedRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedSetSpeed(context,
                          streamer);
                   }));
@@ -2709,12 +2709,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::icd::v1::SetSpeedResponse* /*response*/) override {
+    ::grpc::Status SetSpeed(::grpc::ServerContext* /*context*/, const ::icd::v1::SetSpeedRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedSetSpeed(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SetSpeedRequest,::icd::v1::SetSpeedResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedSetSpeed(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SetSpeedRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_SavePosition : public BaseClass {
@@ -2724,10 +2724,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_SavePosition() {
       ::grpc::Service::MarkMethodStreamed(11,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::SavePositionRequest, ::icd::v1::SavePositionResponse>(
+          ::icd::v1::SavePositionRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::SavePositionRequest, ::icd::v1::SavePositionResponse>* streamer) {
+                     ::icd::v1::SavePositionRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedSavePosition(context,
                          streamer);
                   }));
@@ -2736,12 +2736,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::icd::v1::SavePositionResponse* /*response*/) override {
+    ::grpc::Status SavePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SavePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedSavePosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SavePositionRequest,::icd::v1::SavePositionResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedSavePosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SavePositionRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_DeletePosition : public BaseClass {
@@ -2751,10 +2751,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_DeletePosition() {
       ::grpc::Service::MarkMethodStreamed(12,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::DeletePositionRequest, ::icd::v1::DeletePositionResponse>(
+          ::icd::v1::DeletePositionRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::DeletePositionRequest, ::icd::v1::DeletePositionResponse>* streamer) {
+                     ::icd::v1::DeletePositionRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedDeletePosition(context,
                          streamer);
                   }));
@@ -2763,12 +2763,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::icd::v1::DeletePositionResponse* /*response*/) override {
+    ::grpc::Status DeletePosition(::grpc::ServerContext* /*context*/, const ::icd::v1::DeletePositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedDeletePosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::DeletePositionRequest,::icd::v1::DeletePositionResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedDeletePosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::DeletePositionRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_GoToPosition : public BaseClass {
@@ -2778,10 +2778,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_GoToPosition() {
       ::grpc::Service::MarkMethodStreamed(13,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::GoToPositionRequest, ::icd::v1::GoToPositionResponse>(
+          ::icd::v1::GoToPositionRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::GoToPositionRequest, ::icd::v1::GoToPositionResponse>* streamer) {
+                     ::icd::v1::GoToPositionRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedGoToPosition(context,
                          streamer);
                   }));
@@ -2790,12 +2790,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::icd::v1::GoToPositionResponse* /*response*/) override {
+    ::grpc::Status GoToPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::GoToPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedGoToPosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::GoToPositionRequest,::icd::v1::GoToPositionResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedGoToPosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::GoToPositionRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_SetPolarPosition : public BaseClass {
@@ -2805,10 +2805,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_SetPolarPosition() {
       ::grpc::Service::MarkMethodStreamed(14,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::SetPolarPositionRequest, ::icd::v1::SetPolarPositionResponse>(
+          ::icd::v1::SetPolarPositionRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::SetPolarPositionRequest, ::icd::v1::SetPolarPositionResponse>* streamer) {
+                     ::icd::v1::SetPolarPositionRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedSetPolarPosition(context,
                          streamer);
                   }));
@@ -2817,12 +2817,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::icd::v1::SetPolarPositionResponse* /*response*/) override {
+    ::grpc::Status SetPolarPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetPolarPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedSetPolarPosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SetPolarPositionRequest,::icd::v1::SetPolarPositionResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedSetPolarPosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SetPolarPositionRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_GetPolarPosition : public BaseClass {
@@ -2859,10 +2859,10 @@ class TalosOperatorService final {
     WithStreamedUnaryMethod_SetCartesianPosition() {
       ::grpc::Service::MarkMethodStreamed(16,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::icd::v1::SetCartesianPositionRequest, ::icd::v1::SetCartesianPositionResponse>(
+          ::icd::v1::SetCartesianPositionRequest, ::google::protobuf::UInt32Value>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::icd::v1::SetCartesianPositionRequest, ::icd::v1::SetCartesianPositionResponse>* streamer) {
+                     ::icd::v1::SetCartesianPositionRequest, ::google::protobuf::UInt32Value>* streamer) {
                        return this->StreamedSetCartesianPosition(context,
                          streamer);
                   }));
@@ -2871,12 +2871,12 @@ class TalosOperatorService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::icd::v1::SetCartesianPositionResponse* /*response*/) override {
+    ::grpc::Status SetCartesianPosition(::grpc::ServerContext* /*context*/, const ::icd::v1::SetCartesianPositionRequest* /*request*/, ::google::protobuf::UInt32Value* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedSetCartesianPosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SetCartesianPositionRequest,::icd::v1::SetCartesianPositionResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedSetCartesianPosition(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::icd::v1::SetCartesianPositionRequest,::google::protobuf::UInt32Value>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_GetCartesianPosition : public BaseClass {

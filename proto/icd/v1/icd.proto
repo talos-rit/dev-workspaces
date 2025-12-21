@@ -3,6 +3,7 @@ syntax = "proto3";
 package icd.v1;
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
 
 // The historical transport exposed a command wrapper with message and command
 // identifiers. gRPC already correlates each request/response pair based on the
@@ -11,22 +12,22 @@ import "google/protobuf/empty.proto";
 
 service TalosOperatorService {
 	rpc Handshake(HandshakeRequest) returns (HandshakeResponse);
-	rpc PolarPanDiscrete(PolarPanDiscreteRequest) returns (PolarPanDiscreteResponse);
-	rpc Home(HomeRequest) returns (HomeResponse);
-	rpc PolarPanContinuousStart(PolarPanContinuousStartRequest) returns (PolarPanContinuousStartResponse);
-	rpc PolarPanContinuousStop(google.protobuf.Empty) returns (PolarPanContinuousStopResponse);
-	rpc CartesianMoveDiscrete(CartesianMoveDiscreteRequest) returns (CartesianMoveDiscreteResponse);
-	rpc CartesianMoveContinuousStart(CartesianMoveContinuousStartRequest) returns (CartesianMoveContinuousStartResponse);
-	rpc CartesianMoveContinuousStop(google.protobuf.Empty) returns (CartesianMoveContinuousStopResponse);
+	rpc PolarPanDiscrete(PolarPanDiscreteRequest) returns (google.protobuf.UInt32Value);
+	rpc Home(HomeRequest) returns (google.protobuf.UInt32Value);
+	rpc PolarPanContinuousStart(PolarPanContinuousStartRequest) returns (google.protobuf.UInt32Value);
+	rpc PolarPanContinuousStop(google.protobuf.Empty) returns (google.protobuf.UInt32Value);
+	rpc CartesianMoveDiscrete(CartesianMoveDiscreteRequest) returns (google.protobuf.UInt32Value);
+	rpc CartesianMoveContinuousStart(CartesianMoveContinuousStartRequest) returns (google.protobuf.UInt32Value);
+	rpc CartesianMoveContinuousStop(google.protobuf.Empty) returns (google.protobuf.UInt32Value);
 	rpc ExecuteHardwareOperation(ExecuteHardwareOperationRequest) returns (ExecuteHardwareOperationResponse);
 	rpc GetSpeed(google.protobuf.Empty) returns (GetSpeedResponse);
-	rpc SetSpeed(SetSpeedRequest) returns (SetSpeedResponse);
-	rpc SavePosition(SavePositionRequest) returns (SavePositionResponse);
-	rpc DeletePosition(DeletePositionRequest) returns (DeletePositionResponse);
-	rpc GoToPosition(GoToPositionRequest) returns (GoToPositionResponse);
-	rpc SetPolarPosition(SetPolarPositionRequest) returns (SetPolarPositionResponse);
+	rpc SetSpeed(SetSpeedRequest) returns (google.protobuf.UInt32Value);
+	rpc SavePosition(SavePositionRequest) returns (google.protobuf.UInt32Value);
+	rpc DeletePosition(DeletePositionRequest) returns (google.protobuf.UInt32Value);
+	rpc GoToPosition(GoToPositionRequest) returns (google.protobuf.UInt32Value);
+	rpc SetPolarPosition(SetPolarPositionRequest) returns (google.protobuf.UInt32Value);
 	rpc GetPolarPosition(GetPolarPositionRequest) returns (GetPolarPositionResponse);
-	rpc SetCartesianPosition(SetCartesianPositionRequest) returns (SetCartesianPositionResponse);
+	rpc SetCartesianPosition(SetCartesianPositionRequest) returns (google.protobuf.UInt32Value);
 	rpc GetCartesianPosition(GetCartesianPositionRequest) returns (GetCartesianPositionResponse);
 }
 
@@ -148,56 +149,4 @@ message GetCartesianPositionResponse {
 	int32 x_tenths_mm = 2;
 	int32 y_tenths_mm = 3;
 	int32 z_tenths_mm = 4;
-}
-
-message PolarPanDiscreteResponse {
-	CommandResult status = 1;
-}
-
-message HomeResponse {
-	CommandResult status = 1;
-}
-
-message PolarPanContinuousStartResponse {
-	CommandResult status = 1;
-}
-
-message PolarPanContinuousStopResponse {
-	CommandResult status = 1;
-}
-
-message CartesianMoveDiscreteResponse {
-	CommandResult status = 1;
-}
-
-message CartesianMoveContinuousStartResponse {
-	CommandResult status = 1;
-}
-
-message CartesianMoveContinuousStopResponse {
-	CommandResult status = 1;
-}
-
-message SetSpeedResponse {
-	CommandResult status = 1;
-}
-
-message SavePositionResponse {
-	CommandResult status = 1;
-}
-
-message DeletePositionResponse {
-	CommandResult status = 1;
-}
-
-message GoToPositionResponse {
-	CommandResult status = 1;
-}
-
-message SetPolarPositionResponse {
-	CommandResult status = 1;
-}
-
-message SetCartesianPositionResponse {
-	CommandResult status = 1;
 }

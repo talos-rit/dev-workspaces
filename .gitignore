@@ -260,3 +260,6 @@ __marimo__/
 
 # debug information files
 *.dwo
+
+.vscode/
+.idea/
