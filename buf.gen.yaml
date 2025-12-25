@@ -15,6 +15,7 @@ plugins:
   - plugin: buf.build/grpc/cpp:v1.72.0
     out: cpp-ws/src
   - plugin: buf.build/protocolbuffers/cpp:v27.0
-    out: operator/src/common/proto
+    out: operator/src/proto
   - plugin: buf.build/grpc/cpp:v1.72.0
-    out: operator/src/common/proto
+    out: operator/src/proto
+  
