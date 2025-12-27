@@ -10,7 +10,7 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "linux-clang-arm64",
-            "compileCommands": "${workspaceFolder}/cpp-ws/build/compile_commands.json"
+            "compileCommands": "${workspaceFolder}/operator/build/compile_commands.json"
         }
     ],
     "version": 4
