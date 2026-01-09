@@ -1,14 +1,24 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "cpp-ws",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
-            "defines": [],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
-            "cppStandard": "c++17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-clang-arm64",
+            "compileCommands": "${workspaceFolder}/cpp-ws/build/Release/compile_commands.json"
+        },
+        {
+            "name": "operator",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
             "intelliSenseMode": "linux-clang-arm64",
             "compileCommands": "${workspaceFolder}/operator/build/compile_commands.json"
         }

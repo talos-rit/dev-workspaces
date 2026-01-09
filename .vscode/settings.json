@@ -1,8 +1,8 @@
 {
-  "cmake.sourceDirectory": "${workspaceFolder}/cpp-ws",
+  "cmake.sourceDirectory": [
+    "${workspaceFolder}/cpp-ws",
+    "${workspaceFolder}/operator"
+  ],
   "C_Cpp.loggingLevel": "Debug",
-  "C_Cpp.files.exclude": {
-    "**/icd/v1/*": true,
-  },
   "python-envs.pythonProjects": []
 }

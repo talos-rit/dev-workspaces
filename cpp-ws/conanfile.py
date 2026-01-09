@@ -1,4 +1,5 @@
 from conan import ConanFile
+from conan.tools.cmake import cmake_layout
 
 
 class GrpcSpikeConan(ConanFile):
@@ -8,7 +9,7 @@ class GrpcSpikeConan(ConanFile):
     """
 
     settings = "os", "arch", "compiler", "build_type"
-    requires = ["grpc/1.72.0", "protobuf/5.27.0"]
+    requires = ["grpc/1.72.0", "protobuf/5.27.0", "concurrentqueue/1.0.4"]
     generators = "CMakeDeps", "CMakeToolchain"
 
     default_options = {
@@ -16,3 +17,6 @@ class GrpcSpikeConan(ConanFile):
         "protobuf/*:shared": False,
         "abseil/*:shared": False,
     }
+
+    def layout(self):
+        cmake_layout(self)
